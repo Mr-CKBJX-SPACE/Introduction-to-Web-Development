@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Web Development Boot Camp - 3-Day Intensive Program">
+    <meta name="author" content="Web Development Boot Camp">
+    <title>Introduction to Web Development Boot Camp</title>
+    
+    <!-- Reveal.js 4.6.1 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/black.css">
+    
+    <!-- Highlight.js for code syntax highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/monokai.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-purple: #6b46c1;
+            --primary-teal: #0d9488;
+            --accent-pink: #ec4899;
+            --text-light: #f8fafc;
+            --text-dark: #1e293b;
+        }
+        
+        .reveal {
+            background: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-teal) 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            color: var(--text-light);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: 700;
+        }
+        
+        .reveal h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        .reveal h2 {
+            font-size: 2em;
+        }
+        
+        .reveal h3 {
+            font-size: 1.5em;
+        }
+        
+        .reveal p, .reveal li {
+            color: var(--text-light);
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .reveal ul {
+            list-style-type: none;
+        }
+        
+        .reveal ul li::before {
+            content: "▸ ";
+            color: var(--accent-pink);
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+        
+        .reveal pre {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .reveal code {
+            font-family: 'Courier New', monospace;
+            padding: 2px 6px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+        }
+        
+        .reveal .slide-background {
+            background: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-teal) 100%);
+        }
+        
+        .exercise-box {
+            background: rgba(236, 72, 153, 0.2);
+            border-left: 4px solid var(--accent-pink);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .tip-box {
+            background: rgba(13, 148, 136, 0.2);
+            border-left: 4px solid var(--primary-teal);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+        }
+        
+        .subtitle {
+            color: #fbbf24;
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+        
+        .day-badge {
+            background: linear-gradient(90deg, var(--accent-pink), var(--primary-purple));
+            padding: 10px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 20px 0;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .resource-link {
+            color: #fbbf24;
+            text-decoration: none;
+            border-bottom: 2px solid #fbbf24;
+            transition: all 0.3s;
+        }
+        
+        .resource-link:hover {
+            color: var(--accent-pink);
+            border-bottom-color: var(--accent-pink);
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+        
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .contact-info {
+            font-size: 1.2em;
+            margin-top: 30px;
+        }
+        
+        .highlight-text {
+            color: #fbbf24;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- TITLE SLIDE -->
+            <section>
+                <h1>🚀 Introduction to Web Development Boot Camp</h1>
+                <p class="subtitle">3-Day Intensive Program</p>
+                <p style="margin-top: 50px; font-size: 1.3em;">
+                    Welcome to an exciting journey into the world of web development! 🎉
+                </p>
+                <aside class="notes">
+                    Welcome everyone to the Web Development Boot Camp. Over the next three days, we'll cover everything from basic HTML to deployment with AI-powered tools.
+                </aside>
+            </section>
+
+            <!-- DAY 1 TITLE -->
+            <section>
+                <div class="day-badge">DAY 1</div>
+                <h2>Introduction to Web Development & HTML5</h2>
+                <p>Building the Foundation 🏗️</p>
+            </section>
+
+            <!-- DAY 1: INTRODUCTION TO WEB DEVELOPMENT -->
+            <section>
+                <section>
+                    <h2>Introduction to Web Development</h2>
+                    <p>Understanding the Digital Landscape 🌐</p>
+                </section>
+
+                <section>
+                    <h3>What is Web Development?</h3>
+                    <ul>
+                        <li class="fragment">The process of creating websites and web applications</li>
+                        <li class="fragment">Combines design, programming, and database management</li>
+                        <li class="fragment">Powers everything from simple blogs to complex platforms</li>
+                        <li class="fragment">Constantly evolving with new technologies and frameworks</li>
+                        <li class="fragment">Essential skill in today's digital economy</li>
+                    </ul>
+                    <aside class="notes">
+                        Web development is the backbone of the internet. It encompasses everything from the pages you view to the applications you use daily.
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Frontend vs Backend vs Full Stack</h3>
+                    <div class="grid-2">
+                        <div>
+                            <h4 class="fragment">🎨 Frontend</h4>
+                            <ul>
+                                <li class="fragment">User interface & experience</li>
+                                <li class="fragment">HTML, CSS, JavaScript</li>
+                                <li class="fragment">React, Vue, Angular</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="fragment">⚙️ Backend</h4>
+                            <ul>
+                                <li class="fragment">Server-side logic</li>
+                                <li class="fragment">Databases & APIs</li>
+                                <li class="fragment">Node.js, Python, Java</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fragment" style="margin-top: 30px;">
+                        <h4>🔄 Full Stack</h4>
+                        <p>Combines both frontend and backend development skills</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>How the Web Works</h3>
+                    <h4 class="fragment">Client-Server Model</h4>
+                    <ul>
+                        <li class="fragment"><span class="highlight-text">Client (Browser)</span>: Requests resources</li>
+                        <li class="fragment"><span class="highlight-text">Server</span>: Processes requests and sends responses</li>
+                        <li class="fragment"><span class="highlight-text">HTTP/HTTPS</span>: Communication protocol</li>
+                        <li class="fragment"><span class="highlight-text">DNS</span>: Translates domain names to IP addresses</li>
+                        <li class="fragment"><span class="highlight-text">Response</span>: HTML, CSS, JS, images, data</li>
+                    </ul>
+                    <aside class="notes">
+                        Understanding the client-server model is fundamental. Every web interaction follows this pattern.
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Web Development Tools & Environment Setup</h3>
+                    <ul>
+                        <li class="fragment"><span class="highlight-text">Code Editor</span>: VS Code, Sublime Text, Atom</li>
+                        <li class="fragment"><span class="highlight-text">Browser</span>: Chrome DevTools, Firefox Developer Tools</li>
+                        <li class="fragment"><span class="highlight-text">Version Control</span>: Git & GitHub</li>
+                        <li class="fragment"><span class="highlight-text">Package Managers</span>: npm, yarn</li>
+                        <li class="fragment"><span class="highlight-text">Local Server</span>: Live Server, Python SimpleHTTPServer</li>
+                    </ul>
+                    <div class="tip-box fragment">
+                        <strong>💡 Pro Tip:</strong> VS Code with extensions like Live Server, Prettier, and ESLint is the most popular setup for web development.
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Career Opportunities in Web Development</h3>
+                    <ul>
+                        <li class="fragment"><span class="highlight-text">Frontend Developer</span>: $70k - $130k/year</li>
+                        <li class="fragment"><span class="highlight-text">Backend Developer</span>: $80k - $140k/year</li>
+                        <li class="fragment"><span class="highlight-text">Full Stack Developer</span>: $85k - $150k/year</li>
+                        <li class="fragment"><span class="highlight-text">UI/UX Developer</span>: $75k - $135k/year</li>
+                        <li class="fragment"><span class="highlight-text">DevOps Engineer</span>: $90k - $160k/year</li>
+                        <li class="fragment"><span class="highlight-text">Freelance/Remote</span>: Flexible opportunities worldwide</li>
+                    </ul>
+                    <p class="fragment" style="margin-top: 30px;">High demand, competitive salaries, and remote work options! 🌟</p>
+                </section>
+            </section>
+
+            <!-- DAY 1: HTML5 -->
+            <section>
+                <section>
+                    <h2>HTML5</h2>
+                    <p>The Structure of the Web 📄</p>
+                </section>
+
+                <section>
+                    <h3>What is HTML?</h3>
+                    <ul>
+                        <li class="fragment"><span class="highlight-text">HTML</span>: HyperText Markup Language</li>
+                        <li class="fragment">Standard markup language for web pages</li>
+                        <li class="fragment">Uses tags to structure content</li>
+                        <li class="fragment">HTML5 is the latest version with modern features</li>
+                        <li class="fragment">Works together with CSS and JavaScript</li>
+                    </ul>
+                    <div class="tip-box fragment">
+                        <strong>💡 Remember:</strong> HTML provides structure, CSS provides style, JavaScript provides behavior.
+                    </div>
+                </section>
+
+                <section>
+                    <h3>HTML Document Structure</h3>
+                    <pre><code class="language-html" data-trim data-line-numbers>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <main>
+        <p>This is my first HTML5 document!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+                    </code></pre>
+                    <aside class="notes">
+                        This is the basic structure every HTML document should follow. DOCTYPE declaration, html tag, head for metadata, and body for content.
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Semantic HTML5 Elements</h3>
+                    <ul>
+                        <li class="fragment"><code>&lt;header&gt;</code>: Page or section header</li>
+                        <li class="fragment"><code>&lt;nav&gt;</code>: Navigation links</li>
+                        <li class="fragment"><code>&lt;main&gt;</code>: Main content</li>
+                        <li class="fragment"><code>&lt;article&gt;</code>: Independent, self-contained content</li>
+                        <li class="fragment"><code>&lt;section&gt;</code>: Thematic grouping of content</li>
+                        <li class="fragment"><code>&lt;aside&gt;</code>: Sidebar content</li>
+                        <li class="fragment"><code>&lt;footer&gt;</code>: Page or section footer</li>
+                        <li class="fragment"><code>&lt;figure&gt;</code> & <code>&lt;figcaption&gt;</code>: Images with captions</li>
+                    </ul>
+                    <p class="fragment" style="margin-top: 20px;">Benefits: Better SEO, accessibility, and code readability! ✨</p>
+                </section>
+
+                <section>
+                    <h3>Forms and Input Types</h3>
+                    <pre><code class="language-html" data-trim data-line-numbers>
+<form action="/submit" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="date">Birth Date:</label>
+    <input type="date" id="date" name="date">
+    
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color">
+    
+    <label for="range">Rating:</label>
+    <input type="range" id="range" min="1" max="5">
+    
+    <button type="submit">Submit</button>
+</form>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>HTML5 APIs</h3>
+                    <ul>
+                        <li class="fragment"><span class="highlight-text">Geolocation API</span>: Access user's location</li>
+                        <li class="fragment"><span class="highlight-text">Canvas API</span>: Draw graphics dynamically</li>
+                        <li class="fragment"><span class="highlight-text">Drag and Drop API</span>: Interactive drag/drop</li>
+                        <li class="fragment"><span class="highlight-text">Web Storage API</span>: localStorage & sessionStorage</li>
+                        <li class="fragment"><span class="highlight-text">Audio/Video API</span>: Native media playback</li>
+                        <li class="fragment"><span class="highlight-text">Web Workers</span>: Background JavaScript execution</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>HTML Best Practices</h3>
+                    <ul>
+                        <li class="fragment">Always use semantic HTML elements</li>
+                        <li class="fragment">Include proper DOCTYPE and meta tags</li>
+                        <li class="="fragment">Add alt attributes to images for accessibility</li>
+                        <li class="fragment">Use meaningful IDs and class names</li>
+                        <li class="fragment">Keep code properly indented and organized</li>
+                        <li class="fragment">Validate your HTML using W3C validator</li>
+                        <li class="fragment">Make your site accessible (ARIA attributes)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Hands-on Exercise 🛠️</h3>
+                    <div class="exercise-box">
+                        <h4>Create Your First Web Page</h4>
+                        <ol style="list-style-type: decimal; margin-left: 40px;">
+                            <li>Create an HTML file with proper structure</li>
+                            <li>Add a header with your name</li>
+                            <li>Include a navigation menu with 3 links</li>
+                            <li>Create a main section with an about me paragraph</li>
+                            <li>Add a form with name, email, and message fields</li>
+                            <li>Include a footer with copyright information</li>
+                        </ol>
+                        <p><strong>Time:</strong> 20 minutes</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- DAY 2 TITLE -->
+            <section>
+                <div class="day-badge">DAY 2</div>
+                <h2>CSS3, Bootstrap 5 & GitHub</h2>
+                <p>Styling, Frameworks & Version Control 🎨</p>
+            </section>
+
+            <!-- DAY 2: CSS3 -->
+            <section>
+                <section>
+                    <h2>CSS3</h2>
+                    <p>Making the Web Beautiful 🎨</p>
+                </section>
+
+                <section>
+                    <h3>What is CSS?</h3>
+                    <ul>
+                        <li class="fragment"><span class="highlight-text">CSS</span>: Cascading Style Sheets</li>
+                        <li class="fragment">Controls the visual presentation of HTML</li>
+                        <li class="fragment">Separates content from design</li>
+                        <li class="fragment">CSS3 adds animations, gradients, and more</li>
+                        <li class="fragment">Enables responsive design for all devices</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>CSS Selectors and Specificity</h3>
+                    <pre><code class="language-css" data-trim data-line-numbers>
+/* Element Selector */
+p { color: blue; }
+
+/* Class Selector */
+.highlight { background-color: yellow; }
+
+/* ID Selector */
+#header { font-size: 24px; }
+
+/* Descendant Selector */
+nav a { text-decoration: none; }
+
+/* Pseudo-class */
+a:hover { color: red; }
+
+/* Attribute Selector */
+input[type="email"] { border: 2px solid green; }
+                    </code></pre>
+                    <div class="tip-box fragment">
+                        <strong>💡 Specificity:</strong> Inline > ID > Class > Element
+                    </div>
+                </section>
+
+                <section>
+                    <h3>The Box Model</h3>
+                    <pre><code class="language-css" data-trim data-line-numbers>
+.box {
+    /* Content */
+    width: 300px;
+    height: 200px;
+    
+    /* Padding - space inside the border */
+    padding: 20px;
+    
+    /* Border */
+    border: 2px solid #333;
+    
+    /* Margin - space outside the border */
+    margin: 10px;
+    
+    /* Box-sizing changes how width/height are calculated */
+    box-sizing: border-box;
+}
+                    </code></pre>
+                    <p class="fragment">Total width = width + padding + border + margin</p>
+                </section>
+
+                <section>
+                    <h3>Flexbox Layout</h3>
+                    <pre><code class="language-css" data-trim data-line-numbers>
+.container {
+    display: flex;
+    flex-direction: row; /* or column */
+    justify-content: space-between; /* main axis */
+    align-items: center; /* cross axis */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    flex: 1; /* grow, shrink, basis */
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+                    </code></pre>
+                    <p class="fragment">Perfect for one-dimensional layouts! 📏</p>
+                </section>
+
+                <section>
+                    <h3>Grid Layout</h3>
+                    <pre><code class="language-css" data-trim data-line-numbers>
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+                    </code></pre>
+                    <p class="fragment">Ideal for two-dimensional layouts! 📐</p>
+                </section>
+
+                <section>
+                    <h3>CSS3 Features: Transitions, Animations, Transforms</h3>
+                    <pre><code class="language-css" data-trim data-line-numbers>
+/* Transition */
+.button {
+    transition: all 0.3s ease;
+}
+.button:hover {
+    transform: scale(1.1);
+    background-color: #ff6b6b;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.animate {
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Transform */
+.rotate { transform: rotate(45deg); }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Responsive Design Principles</h3>
+                    <ul>
+                        <li class="fragment"><span class="highlight-text">Mobile-First</span>: Design for small screens first</li>
+                        <li class="fragment"><span class="highlight-text">Fluid Grids</span>: Use percentages instead of fixed widths</li>
+                        <li class="fragment"><span class="highlight-text">Flexible Images</span>: max-width: 100%</li>
+                        <li class="fragment"><span class="highlight-text">Media Queries</span>: Breakpoints for different devices</li>
+                        <li class="fragment"><span class="highlight-text">Viewport Meta Tag</span>: Control mobile rendering</li>
+                        <li class="fragment"><span class="highlight-text">Relative Units</span>: em, rem, vw, vh</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Media Queries</h3>
+                    <pre><code class="language-css" data-trim data-line-numbers>
+/* Mobile First Approach */
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+        padding: 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+                    </code></pre>
+                </section>
+            </section>
+
+            <!-- DAY 2: BOOTSTRAP 5 -->
+            <section>
+                <section>
+                    <h2>Bootstrap 5</h2>
+                    <p>Rapid Frontend Development 🚀</p>
+                </section>
+
+                <section>
+                    <h3>What is Bootstrap?</h3>
+                    <ul>
+                        <li class="fragment">Most popular CSS framework</li>
+                        <li class="fragment">Pre-built components and utilities</li>
+                        <li class="fragment">Responsive grid system</li>
+                        <li class="fragment">Bootstrap 5 - No jQuery dependency!</li>
+                        <li class="fragment">Customizable with Sass variables</li>
+                        <li class="fragment">Speeds up development significantly</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Bootstrap Grid System</h3>
+                    <pre><code class="language-html" data-trim data-line-numbers>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            Column 1
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            Column 2
+        </div>
+        <div class="col-12 col-md-12 col-lg-4">
+            Column 3
+        </div>
+    </div>
+</div>
+                    </code></pre>
+                    <p class="fragment">12-column grid system with breakpoints: xs, sm, md, lg, xl, xxl</p>
+                </section>
+
+                <section>
+                    <h3>Bootstrap Components: Navbar</h3>
+                    <pre><code class="language-html" data-trim data-line-numbers>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Site</a>
+        <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Bootstrap Components: Cards</h3>
+                    <pre><code class="language-html" data-trim data-line-numbers>
+<div class="card" style="width: 18rem;">
+    <img src="image.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">
+            Some quick example text to build on the card.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Bootstrap Components: Buttons & Forms</h3>
+                    <pre><code class="language-html" data-trim data-line-numbers>
+<!-- Buttons -->
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-outline-info">Outline</button>
+
+<!-- Form -->
+<form>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Bootstrap Utilities and Helpers</h3>
+                    <pre><code class="language-html" data-trim data-line-numbers>
+<!-- Spacing: m = margin, p = padding -->
+<div class="mt-3 mb-4 p-2">Spacing</div>
+
+<!-- Text utilities -->
+<p class="text-center text-primary fw-bold">Centered Bold Text</p>
+
+<!-- Display utilities -->
+<div class="d-flex justify-content-between align-items-center">
+    <span>Left</span>
+    <span>Right</span>
+</div>
+
+<!-- Background and colors -->
+<div class="bg-primary text-white p-3">Primary Background</div>
+
+<!-- Responsive utilities -->
+<div class="d-none d-md-block">Hidden on mobile</div>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Customizing Bootstrap</h3>
+                    <ul>
+                        <li class="fragment">Override CSS variables in your own stylesheet</li>
+                        <li class="fragment">Use Sass to customize before compilation</li>
+                        <li class="fragment">Create custom themes with primary colors</li>
+                        <li class="fragment">Add custom utility classes</li>
+                        <li class="fragment">Use Bootstrap's spacing and breakpoint systems</li>
+                    </ul>
+                    <div class="tip-box fragment">
+                        <strong>💡 Pro Tip:</strong> Load your custom CSS after Bootstrap to override defaults easily.
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Responsive Design with Bootstrap</h3>
+                    <ul>
+                        <li class="fragment">Grid automatically adjusts to screen size</li>
+                        <li class="fragment">Use responsive utility classes</li>
+                        <li class="fragment">Responsive typography with rem units</li>
+                        <li class="fragment">Built-in breakpoints for all devices</li>
+                        <li class="fragment">Mobile-first approach by default</li>
+                    </ul>
+                    <p class="fragment" style="margin-top: 20px;">Build once, works everywhere! 📱💻🖥️</p>
+                </section>
+            </section>
+
+            <!-- DAY 2: GITHUB -->
+            <section>
+                <section>
+                    <h2>GitHub</h2>
+                    <p>Version Control & Collaboration 🔧</p>
+                </section>
+
+                <section>
+                    <h3>What is Version Control?</h3>
+                    <ul>
+                        <li class="fragment">Track changes to code over time</li>
+                        <li class="fragment">Collaborate with multiple developers</li>
+                        <li class="fragment">Revert to previous versions if needed</li>
+                        <li class="fragment">Branch for features and experiments</li>
+                        <li class="fragment">Essential for professional development</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Git vs GitHub</h3>
+                    <div class="grid-2">
+                        <div>
+                            <h4 class="fragment">📦 Git</h4>
+                            <ul>
+                                <li class="fragment">Version control system</li>
+                                <li class="fragment">Local repositories</li>
+                                <li class="fragment">Command-line tool</li>
+                                <li class="fragment">Created by Linus Torvalds</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="fragment">🐙 GitHub</h4>
+                            <ul>
+                                <li class="fragment">Web-based hosting service</li>
+                                <li class="fragment">Remote repositories</li>
+                                <li class="fragment">Collaboration features</li>
+                                <li class="fragment">Community & open source</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Creating Repositories</h3>
+                    <ul>
+                        <li class="fragment">Click "New Repository" on GitHub</li>
+                        <li class="fragment">Choose a descriptive name</li>
+                        <li class="fragment">Add a README.md file</li>
+                        <li class="fragment">Select a license (MIT, Apache, GPL)</li>
+                        <li class="fragment">Clone to your local machine</li>
+                    </ul>
+                    <div class="tip-box fragment">
+                        <strong>💡 Tip:</strong> Use a .gitignore file to exclude files like node_modules, .env
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Basic Git Commands</h3>
+                    <pre><code class="language-bash" data-trim data-line-numbers>
+# Initialize a repository
+git init
+
+# Clone a repository
+git clone https://github.com/username/repo.git
+
+# Check status
+git status
+
+# Stage files
+git add .
+git add filename.html
+
+# Commit changes
+git commit -m "Add new feature"
+
+# Push to remote
+git push origin main
+
+# Pull latest changes
+git pull origin main
+
+# Create and switch to a branch
+git checkout -b feature-branch
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>GitHub Pages Setup</h3>
+                    <ul>
+                        <li class="fragment">Go to repository Settings</li>
+                        <li class="fragment">Navigate to "Pages" section</li>
+                        <li class="fragment">Select source branch (usually main)</li>
+                        <li class="fragment">Choose root or /docs folder</li>
+                        <li class="fragment">Save and wait for deployment</li>
+                        <li class="fragment">Access at: username.github.io/repo-name</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Deploying Your First Website</h3>
+                    <div class="exercise-box">
+                        <h4>Step-by-Step Deployment</h4>
+                        <ol style="list-style-type: decimal; margin-left: 40px;">
+                            <li>Create index.html with your web page</li>
+                            <li>Create a new GitHub repository</li>
+                            <li>Push your code to the repository</li>
+                            <li>Enable GitHub Pages in settings</li>
+                            <li>Visit your live website!</li>
+                        </ol>
+                        <p class="fragment" style="margin-top: 20px;"><strong>🎉 Congratulations!</strong> You're now a published web developer!</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- DAY 3 TITLE -->
+            <section>
+                <div class="day-badge">DAY 3</div>
+                <h2>AI & Resources</h2>
+                <p>Modern Tools & Best Practices 🤖</p>
+            </section>
+
+            <!-- DAY 3: GENERATIVE AI -->
+            <section>
+                <section>
+                    <h2>Generative AI in Web Development</h2>
+                    <p>Your New Development Partner 🤖</p>
+                </section>
+
+                <section>
+                    <h3>Introduction to AI in Web Development</h3>
+                    <ul>
+                        <li class="fragment">AI assists, doesn't replace developers</li>
+                        <li class="fragment">Speeds up coding and problem-solving</li>
+                        <li class="fragment">Helps with learning and documentation</li>
+                        <li class="fragment">Generates boilerplate code quickly</li>
+                        <li class="fragment">Provides suggestions and best practices</li>
+                        <li class="fragment">Revolutionizing how we build software</li>
+                    </ul>
+                    <aside class="notes">
+                        AI is a powerful tool that enhances productivity but critical thinking and understanding are still essential.
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>GitHub Copilot for Code Assistance</h3>
+                    <pre><code class="language-javascript" data-trim data-line-numbers>
+// Type a comment, Copilot suggests code:
+
+// Function to validate email address
+function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+// Function to fetch user data from API
+async function fetchUserData(userId) {
+    const response = await fetch(`/api/users/${userId}`);
+    const data = await response.json();
+    return data;
+}
+
+// Create a responsive navbar component
+// Copilot will generate complete React/Vue component!
+                    </code></pre>
+                    <div class="tip-box fragment">
+                        <strong>💡 Pro Tip:</strong> Write descriptive comments to get better AI suggestions!
+                    </div>
+                </section>
+
+                <section>
+                    <h3>ChatGPT for Problem Solving</h3>
+                    <ul>
+                        <li class="fragment"><span class="highlight-text">Debugging</span>: Paste error messages for solutions</li>
+                        <li class="fragment"><span class="highlight-text">Learning</span>: Explain concepts in simple terms</li>
+                        <li class="fragment"><span class="highlight-text">Code Review</span>: Get suggestions for improvements</li>
+                        <li class="fragment"><span class="highlight-text">Refactoring</span>: Optimize and clean code</li>
+                        <li class="fragment"><span class="highlight-text">Documentation</span>: Generate comments and docs</li>
+                        <li class="fragment"><span class="highlight-text">Algorithms</span>: Solve complex coding problems</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>AI Tools for Design and Content</h3>
+                    <ul>
+                        <li class="fragment"><span class="highlight-text">Midjourney/DALL-E</span>: Generate images and graphics</li>
+                        <li class="fragment"><span class="highlight-text">Figma AI</span>: Design assistance and prototyping</li>
+                        <li class="fragment"><span class="highlight-text">Copy.ai</span>: Generate marketing copy and content</li>
+                        <li class="fragment"><span class="highlight-text">Color AI</span>: Generate color palettes</li>
+                        <li class="fragment"><span class="highlight-text">Uizard</span>: Convert sketches to UI designs</li>
+                        <li class="fragment"><span class="highlight-text">GitHub Copilot Chat</span>: Conversational coding help</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Using AI Responsibly</h3>
+                    <ul>
+                        <li class="fragment">Always understand the code AI generates</li>
+                        <li class="fragment">Review and test AI-generated code thoroughly</li>
+                        <li class="fragment">Don't rely blindly on AI suggestions</li>
+                        <li class="fragment">Be aware of licensing and copyright</li>
+                        <li class="fragment">Maintain code quality and security standards</li>
+                        <li class="fragment">Use AI as a learning tool, not a crutch</li>
+                    </ul>
+                    <div class="tip-box fragment">
+                        <strong>⚠️ Important:</strong> AI can make mistakes. You are responsible for the code you ship!
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Practical Examples and Demos</h3>
+                    <div class="exercise-box">
+                        <h4>Try These AI-Assisted Tasks</h4>
+                        <ol style="list-style-type: decimal; margin-left: 40px;">
+                            <li>Ask ChatGPT to explain CSS Flexbox</li>
+                            <li>Use Copilot to create a form validation function</li>
+                            <li>Generate a responsive navbar with AI</li>
+                            <li>Debug an error message with ChatGPT</li>
+                            <li>Create a color scheme with AI tools</li>
+                        </ol>
+                        <p style="margin-top: 20px;"><strong>⏱️ Time:</strong> 30 minutes exploration</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- DAY 3: COPYRIGHT-FREE RESOURCES -->
+            <section>
+                <section>
+                    <h2>Copyright-Free Resources</h2>
+                    <p>Legal Assets for Your Projects 📚</p>
+                </section>
+
+                <section>
+                    <h3>Importance of Copyright-Free Content</h3>
+                    <ul>
+                        <li class="fragment">Avoid legal issues and copyright violations</li>
+                        <li class="fragment">Use professional assets without costs</li>
+                        <li class="fragment">Build portfolio projects legally</li>
+                        <li class="fragment">Understand different licenses (CC0, MIT, etc.)</li>
+                        <li class="fragment">Give proper attribution when required</li>
+                    </ul>
+                    <div class="tip-box fragment">
+                        <strong>⚖️ Legal Tip:</strong> Always read the license terms before using any resource!
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Images Resources 📸</h3>
+                    <ul>
+                        <li class="fragment">
+                            <a href="https://unsplash.com" class="resource-link" target="_blank">Unsplash</a>
+                            - High-resolution photos, free to use
+                        </li>
+                        <li class="fragment">
+                            <a href="https://pexels.com" class="resource-link" target="_blank">Pexels</a>
+                            - Free stock photos and videos
+                        </li>
+                        <li class="fragment">
+                            <a href="https://pixabay.com" class="resource-link" target="_blank">Pixabay</a>
+                            - 2.7 million+ free images and videos
+                        </li>
+                        <li class="fragment">
+                            <a href="https://freepik.com" class="resource-link" target="_blank">Freepik</a>
+                            - Vectors, photos, PSD files
+                        </li>
+                        <li class="fragment">
+                            <a href="https://burst.shopify.com" class="resource-link" target="_blank">Burst by Shopify</a>
+                            - Free business photos
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Videos Resources 🎥</h3>
+                    <ul>
+                        <li class="fragment">
+                            <a href="https://pexels.com/videos" class="resource-link" target="_blank">Pexels Videos</a>
+                            - Free HD & 4K stock videos
+                        </li>
+                        <li class="fragment">
+                            <a href="https://mixkit.co" class="resource-link" target="_blank">Mixkit</a>
+                            - Free video clips and music
+                        </li>
+                        <li class="fragment">
+                            <a href="https://coverr.co" class="resource-link" target="_blank">Coverr</a>
+                            - Beautiful free stock video footage
+                        </li>
+                        <li class="fragment">
+                            <a href="https://videvo.net" class="resource-link" target="_blank">Videvo</a>
+                            - Free stock videos and motion graphics
+                        </li>
+                        <li class="fragment">
+                            <a href="https://videezy.com" class="resource-link" target="_blank">Videezy</a>
+                            - Free HD stock footage
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Audio/Music Resources 🎵</h3>
+                    <ul>
+                        <li class="fragment">
+                            <a href="https://freemusicarchive.org" class="resource-link" target="_blank">Free Music Archive</a>
+                            - High-quality legal audio downloads
+                        </li>
+                        <li class="fragment">
+                            <a href="https://incompetech.com/music" class="resource-link" target="_blank">Incompetech</a>
+                            - Royalty-free music by Kevin MacLeod
+                        </li>
+                        <li class="fragment">
+                            <a href="https://youtube.com/audiolibrary" class="resource-link" target="_blank">YouTube Audio Library</a>
+                            - Free music and sound effects
+                        </li>
+                        <li class="fragment">
+                            <a href="https://bensound.com" class="resource-link" target="_blank">Bensound</a>
+                            - Royalty-free music
+                        </li>
+                        <li class="fragment">
+                            <a href="https://freesound.org" class="resource-link" target="_blank">Freesound</a>
+                            - Collaborative sound effects database
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Icons Resources 🎨</h3>
+                    <ul>
+                        <li class="fragment">
+                            <a href="https://fontawesome.com" class="resource-link" target="_blank">Font Awesome</a>
+                            - 1,500+ free icons
+                        </li>
+                        <li class="fragment">
+                            <a href="https://feathericons.com" class="resource-link" target="_blank">Feather Icons</a>
+                            - Simply beautiful open source icons
+                        </li>
+                        <li class="fragment">
+                            <a href="https://heroicons.com" class="resource-link" target="_blank">Heroicons</a>
+                            - Beautiful hand-crafted SVG icons
+                        </li>
+                        <li class="fragment">
+                            <a href="https://icons8.com" class="resource-link" target="_blank">Icons8</a>
+                            - Free icons in various styles
+                        </li>
+                        <li class="fragment">
+                            <a href="https://flaticon.com" class="resource-link" target="_blank">Flaticon</a>
+                            - Millions of free icons
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Fonts Resources 🔤</h3>
+                    <ul>
+                        <li class="fragment">
+                            <a href="https://fonts.google.com" class="resource-link" target="_blank">Google Fonts</a>
+                            - 1,400+ free and open source font families
+                        </li>
+                        <li class="fragment">
+                            <a href="https://fontsquirrel.com" class="resource-link" target="_blank">Font Squirrel</a>
+                            - 100% free commercial fonts
+                        </li>
+                        <li class="fragment">
+                            <a href="https://dafont.com" class="resource-link" target="_blank">DaFont</a>
+                            - Archive of freely downloadable fonts
+                        </li>
+                        <li class="fragment">
+                            <a href="https://fontspace.com" class="resource-link" target="_blank">FontSpace</a>
+                            - Free fonts for personal and commercial use
+                        </li>
+                    </ul>
+                    <div class="tip-box fragment">
+                        <strong>💡 Pro Tip:</strong> Google Fonts is the easiest to integrate into web projects!
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Best Practices for Attribution</h3>
+                    <ul>
+                        <li class="fragment">Read the license terms carefully (CC0, CC BY, MIT)</li>
+                        <li class="fragment">Give credit when required (usually in footer or about page)</li>
+                        <li class="fragment">Keep a record of sources and licenses used</li>
+                        <li class="fragment">Include attribution format: "Photo by [Author] on [Platform]"</li>
+                        <li class="fragment">Link back to original source when possible</li>
+                        <li class="fragment">Don't claim others' work as your own</li>
+                    </ul>
+                    <p class="fragment" style="margin-top: 20px;">Proper attribution builds trust and respects creators! 🙏</p>
+                </section>
+            </section>
+
+            <!-- CLOSING: RECAP -->
+            <section>
+                <section>
+                    <h2>Recap of 3 Days 🎯</h2>
+                    <p>What We've Accomplished</p>
+                </section>
+
+                <section>
+                    <h3>Day 1 Summary</h3>
+                    <ul>
+                        <li class="fragment">✅ Introduction to Web Development concepts</li>
+                        <li class="fragment">✅ Frontend, Backend, and Full Stack roles</li>
+                        <li class="fragment">✅ How the web works (Client-Server model)</li>
+                        <li class="fragment">✅ HTML5 structure and semantic elements</li>
+                        <li class="fragment">✅ Forms, input types, and HTML5 APIs</li>
+                        <li class="fragment">✅ Best practices and hands-on exercises</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Day 2 Summary</h3>
+                    <ul>
+                        <li class="fragment">✅ CSS3 fundamentals and selectors</li>
+                        <li class="fragment">✅ Box model, Flexbox, and Grid layouts</li>
+                        <li class="fragment">✅ Animations, transitions, and transforms</li>
+                        <li class="fragment">✅ Responsive design and media queries</li>
+                        <li class="fragment">✅ Bootstrap 5 framework and components</li>
+                        <li class="fragment">✅ Git, GitHub, and deploying with GitHub Pages</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Day 3 Summary</h3>
+                    <ul>
+                        <li class="fragment">✅ Generative AI in web development</li>
+                        <li class="fragment">✅ GitHub Copilot and ChatGPT for coding</li>
+                        <li class="fragment">✅ AI tools for design and content</li>
+                        <li class="fragment">✅ Using AI responsibly and ethically</li>
+                        <li class="fragment">✅ Copyright-free resources for all media types</li>
+                        <li class="fragment">✅ Best practices for attribution and licensing</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- NEXT STEPS -->
+            <section>
+                <h2>Next Steps & Learning Resources 📚</h2>
+                <ul>
+                    <li class="fragment"><span class="highlight-text">Practice Daily</span>: Build small projects regularly</li>
+                    <li class="fragment"><span class="highlight-text">freeCodeCamp</span>: Comprehensive free curriculum</li>
+                    <li class="fragment"><span class="highlight-text">MDN Web Docs</span>: Best reference for web technologies</li>
+                    <li class="fragment"><span class="highlight-text">CSS Tricks</span>: Advanced CSS techniques</li>
+                    <li class="fragment"><span class="highlight-text">JavaScript30</span>: 30 vanilla JS projects</li>
+                    <li class="fragment"><span class="highlight-text">Frontend Mentor</span>: Real-world design challenges</li>
+                    <li class="fragment"><span class="highlight-text">GitHub</span>: Contribute to open source projects</li>
+                    <li class="fragment"><span class="highlight-text">YouTube Channels</span>: Traversy Media, The Net Ninja, Web Dev Simplified</li>
+                </ul>
+            </section>
+
+            <!-- Q&A -->
+            <section>
+                <h2>Questions & Answers 🙋</h2>
+                <p style="font-size: 1.5em; margin-top: 50px;">
+                    Let's discuss your questions, challenges, and ideas!
+                </p>
+                <div class="tip-box" style="margin-top: 50px;">
+                    <strong>💬 Remember:</strong> There are no silly questions in programming. We all started somewhere!
+                </div>
+            </section>
+
+            <!-- THANK YOU -->
+            <section>
+                <h1>Thank You! 🎉</h1>
+                <p style="font-size: 1.3em; margin-top: 30px;">
+                    Congratulations on completing the Web Development Boot Camp!
+                </p>
+                <div class="contact-info">
+                    <p>📧 Email: bootcamp@webdev.com</p>
+                    <p>🌐 Website: www.webdevbootcamp.com</p>
+                    <p>💼 LinkedIn: /company/webdevbootcamp</p>
+                    <p>🐙 GitHub: github.com/webdevbootcamp</p>
+                </div>
+                <p style="margin-top: 50px; font-size: 1.5em;">
+                    Keep coding, keep learning, keep building! 🚀
+                </p>
+                <aside class="notes">
+                    Thank everyone for their participation. Encourage them to continue learning and building projects. The journey is just beginning!
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Reveal.js 4.6.1 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/zoom/zoom.js"></script>
+
+    <!-- Initialize Reveal.js -->
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            
+            // Navigation
+            controls: true,
+            progress: true,
+            center: true,
+            
+            // Keyboard shortcuts
+            keyboard: {
+                13: 'next', // Enter key
+                32: 'next', // Space bar
+            },
+            
+            // Touch navigation
+            touch: true,
+            
+            // Presentation size
+            width: 1200,
+            height: 700,
+            margin: 0.1,
+            
+            // Plugins
+            plugins: [ 
+                RevealNotes, 
+                RevealHighlight, 
+                RevealZoom 
+            ],
+            
+            // Highlight.js settings
+            highlight: {
+                highlightOnLoad: true,
+                escapeHTML: false
+            }
+        });
+    </script>
+</body>
+</html>
