@@ -8,7 +8,7 @@ A comprehensive reveal.js presentation for a 3-day Web Development Boot Camp cov
 - **Size**: 55.9 KB (1,279 lines)
 - **Framework**: Reveal.js 4.6.1
 - **Total Slides**: 73 sections
-- **Code Examples**: 24 interactive code blocks
+- **Code Examples**: 15 interactive code blocks
 
 ## 🎨 Features
 - ✅ Professional purple/teal gradient design
